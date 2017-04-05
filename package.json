@@ -138,8 +138,8 @@
     "dev": "watchify src/js/lightgallery.js -s Lightgallery -t [babelify] -o ../lg/lightgallery.js/lightgallery/js/lightgallery.js -v",
     "lint": "jshint src",
     "watch": "watchify src/js/lightgallery.js -s Lightgallery -t [babelify] -o dist/js/lightgallery.js -v",
-    "release": "NODE_ENV=production node ./tools/release"
+    "release": "node ./tools/release"
   },
   "style": "dist/css/lightgallery.css",
-  "version": "1.0.4"
+  "version": "1.0.7"
 }

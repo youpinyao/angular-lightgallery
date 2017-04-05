@@ -1,7 +1,6 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 const stylelint = require('stylelint');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const webpackConfig = {
   devtool: 'source-map',
@@ -14,6 +13,12 @@ const webpackConfig = {
   },
   module: {
     loaders: [{
+      test: /\.css$/,
+      loader: 'style!css!postcss'
+    }, {
+      test: /\.(eot|svg|ttf|woff|woff2|png|gif|jpg|jpe?g|icon?)$/,
+      loader: 'url-loader?limit=1118192&name=[name]-[hash].[ext]',
+    }, {
       test: /\.js$/,
       loader: 'eslint-loader!babel-loader',
       exclude: /node_modules/,
