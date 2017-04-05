@@ -121,5 +121,5 @@
     "watch": "watchify src/js/lightgallery.js -s Lightgallery -t [babelify] -o dist/js/lightgallery.js -v"
   },
   "style": "dist/css/lightgallery.css",
-  "version": "1.0.1"
+  "version": "1.0.3"
 }

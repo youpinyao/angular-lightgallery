@@ -78,5 +78,9 @@ function lightGalleryService() {
 
     this.LightGallery(div[0], this.defaultConfig);
     this.trigger(div.find('div').eq(0).get(0), 'click');
+
+    div.bind('onBeforeClose', e => {
+      div.remove();
+    });
   }
 }
