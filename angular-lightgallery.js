@@ -1,5 +1,4 @@
 require('./dist/css/lightgallery.css');
-const angular = require('angular-custom');
 const $ = require('jquery');
 const LightGallery = require('./dist/js/lightgallery');
 require('./lib/js/lg-fullscreen');
